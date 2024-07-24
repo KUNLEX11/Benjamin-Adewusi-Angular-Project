@@ -1,0 +1,27 @@
+{{numofCities}}
+
+<p>parent works!</p>
+
+<h5>My city is {{myCity}}</h5>
+<P>list of cities I've visited</P>
+<ul>
+    <li *ngFor="let a of cities">{{a | uppercase}}</li>
+</ul>
+<!-- <div *ngIf= "numofCities >=5"> -->
+
+     
+    
+<app-child [numofC]="numofCities" (numofCitiesVisitedEmit)= "numofCitiesCount($event)"></app-child>
+
+
+ <div *ngIf= "numofCities >3">  <!--means if numberofCities is nore than 3, display the paragraph -->
+    <p>Number of states visited is: {{getstatesVisited()}}</p>
+</div> 
+<div>
+    <h2>From the Child Component</h2>
+    <h3>I've visited {{numofCitiesCountAccepted}} plants</h3>
+</div>
+<ol>
+    <li *ngFor= "let s of statesVisited">{{s}}</li>
+</ol>   
+<app-footer></app-footer>

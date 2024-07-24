@@ -1,0 +1,24 @@
+body {
+    background-color: blue;
+}
+.Main {
+    text-align: center;
+    background-color: gray;
+    
+}
+.class1{
+    font-size: 42px;
+    font-weight: bold;
+    color: whitesmoke;
+    padding-bottom: 10px;
+}
+.class2{
+    font-size: 24px;
+    font-weight: bold;
+    color: brown;
+    padding-bottom: 10px;
+}
+.marq{
+    text-align: center;
+}
+
